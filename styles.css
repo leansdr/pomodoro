@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #e9e9e9;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+#cronometro {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 500px;
+  padding: 5px;
+}
+
+#border {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 14px 30px;
+  /* rgb(92, 231, 236);*/
+  border: 8px solid #5da423;
+  margin: 20px auto;
+  font-size: 32px;
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  /*border-top-color: #51d4db;*/
+  background-color: #000;
+  position: relative;
+  transition: all 0.5s linear;
+}
+
+.grow {
+  transform: scale(1.1);
+}
+
+#time {
+  color: #fff;
+  letter-spacing: 5px;
+  font-size: 60px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  position: absolute;
+  z-index: 999;
+}
+
+#pause {
+  font-size: 20px;
+  height: 15px;
+  letter-spacing: 2px;
+  color: #c60f13;
+  position: absolute;
+  margin-top: 100px;
+  font-weight: bold;
+}
+
+#buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.btn {
+  width: 150px;
+  padding: 10px;
+  margin: 5px auto;
+  background-color: transparent;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 30px;
+  color: #fff;
+  cursor: pointer;
+  letter-spacing: 2px;
+  transition: all 0.4s;
+}
+
+#btn-start {
+  background-color: #5da423;
+  border: 3px solid #5da423;
+}
+
+#btn-pause {
+  background-color: #c60f13;
+  border: 3px solid #c60f13;
+}
+
+#btn-reset {
+  background-color: #2284a1;
+  border: 3px solid #2284a1;
+}
+
+.btn:hover {
+  background-color: transparent !important;
+  color: #000;
+}
+
+#myprogress-bar {
+  position: absolute;
+  border-radius: inherit;
+  border: 8px solid #aaa;
+  width: inherit;
+  height: inherit;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  background-color: #000;
+}
+
+#coffee {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 130px;
+}
+
+.show {
+  display: none;
+}

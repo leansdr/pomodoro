@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!--
+      Need a visual blank slate?
+      Remove all code in `styles.css`!
+    -->
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <h1>Pomodoro</h1>
+    <div id="cronometro">
+      <div id="border" class="grow">
+        <div id="myprogress-bar">
+          <img id="coffee" class="show" />
+          <span id="time"></span>
+        </div>
+        <span id="pause"></span>
+      </div>
+      <div id="buttons">
+        <button class="btn" id="btn-start">Iniciar</button>
+        <button class="btn" id="btn-pause">Parar</button>
+        <button class="btn" id="btn-reset">Resetar</button>
+      </div>
+      <div id="message">
+        <span id="msg-pause"></span>
+        <span id="total-hours"></span>
+      </div>
+    </div>
+  </body>
+</html>
